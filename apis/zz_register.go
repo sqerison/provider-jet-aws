@@ -37,6 +37,7 @@ import (
 	v1alpha1 "github.com/crossplane-contrib/provider-jet-aws/apis/route53resolver/v1alpha1"
 	v1alpha2s3 "github.com/crossplane-contrib/provider-jet-aws/apis/s3/v1alpha2"
 	v1alpha1apis "github.com/crossplane-contrib/provider-jet-aws/apis/v1alpha1"
+    v1alpha1elasticsearch "github.com/crossplane-contrib/provider-jet-aws/apis/elasticsearch/v1alpha1"
 )
 
 func init() {
@@ -57,6 +58,7 @@ func init() {
 		v1alpha1.SchemeBuilder.AddToScheme,
 		v1alpha2s3.SchemeBuilder.AddToScheme,
 		v1alpha1apis.SchemeBuilder.AddToScheme,
+		v1alpha1elasticsearch.SchemeBuilder.AddToScheme,
 	)
 }
 
